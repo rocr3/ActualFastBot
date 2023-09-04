@@ -21,9 +21,9 @@ def is_enabled(value, default):
 # ---------------------» ᴄᴏɴғɪɢ «--------------------- #
 
 PORT = environ.get("PORT", "8080")
-API_ID = int(environ.get("API_ID", "10389378"))
-API_HASH = environ.get("API_HASH", "cdd5c820cb6abeecaef38e2bb8db4860")
-BOT_TOKEN = environ.get("BOT_TOKEN", "5824164149:AAGN0926d1UQGwaOk8BzmJ9q4IsFBaX2OTY")
+API_ID = int(environ.get("API_ID", "13157462"))
+API_HASH = environ.get("API_HASH", "edd40d9c75177de1e3ff6b2a4ad0fc3b")
+BOT_TOKEN = environ.get("BOT_TOKEN", "6665115796:AAHOwze4McNjyLuqaykrcOyp4aNCKfNdqVw")
 
 # https://telegram.dog/premiumbotz
 streambot = Client(
@@ -74,10 +74,10 @@ PICS = (environ.get("PICS", start_pics)).split()
 
 # ---------------------» ᴀᴅᴍɪɴs «--------------------- #
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get("ADMINS", "1938030055").split()]
-ADMINS = (ADMINS.copy() + [1938030055])
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get("CHANNELS", "-1001814841940").split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get("AUTH_USERS", "").split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get("ADMINS", "1235203966").split()]
+ADMINS = (ADMINS.copy() + [1235203966])
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get("CHANNELS", "-1001555253675").split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get("AUTH_USERS", "1235203966").split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get("AUTH_CHANNEL", "")
 auth_grp = environ.get("AUTH_GROUP")
@@ -88,18 +88,18 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # ---------------------» ᴍᴏɴɢᴏ-ᴅʙ «--------------------- #
 
 DATABASE_URI = environ.get(
-"DATABASE_URI", "mongodb+srv://kittu:bhabhi@cluster0.p251snl.mongodb.net/?retryWrites=true&w=majority")  #movies database  #as772685@gmail.com
+"DATABASE_URI", "mongodb+srv://Rakesh600:Rakesh600@cluster0.cociypa.mongodb.net/?retryWrites=true&w=majority")  #movies database  #as772685@gmail.com
 DATABASE_NAME = environ.get("DATABASE_NAME", "cluster0")
 COLLECTION_NAME = environ.get("COLLECTION_NAME", 'Telegram_files')
 
 # https://telegram.dog/premiumbotz
 USER_DATABASE_URI = environ.get(
-"USER_DATABASE_URI", "mongodb+srv://Akash:nono@cluster0.8z9wfgc.mongodb.net/?retryWrites=true&w=majority")  #main users database #xjdidid57e@gmail.com
+"USER_DATABASE_URI", "mongodb+srv://Rakesh600:Rakesh600@cluster0.cociypa.mongodb.net/?retryWrites=true&w=majority")  #main users database #xjdidid57e@gmail.com
 USER_DATABASE_NAME = environ.get("USER_DATABASE_NAME", "cluster0")
 
 # ---------------------» ᴏᴛʜᴇʀs-ᴄᴏɴғɪɢ «--------------------- #
 
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001524622686"))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001884688471"))
 SUPPORT_CHAT = environ.get("SUPPORT_CHAT", "")
 P_TTI_SHOW_OFF = is_enabled((environ.get("P_TTI_SHOW_OFF", "True")), True)
 IMDB = is_enabled((environ.get("IMDB", "False")), False)
@@ -144,9 +144,9 @@ LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
 # ---------------------» sʜᴏʀᴛᴇɴᴇʀ «--------------------- #
 
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "urlshortx.com") #shorturllink.in
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "shareus.io") #shorturllink.in
 SHORTLINK_API = environ.get(
-    "SHORTLINK_API", "1f2035da1a3c8151571769adf790180f8d223a55") #95a8195c40d31e0c3b6baa68813fcecb1239f2e9
+    "SHORTLINK_API", "BxAXtVJ8LlgEYZFcBltF6CLxRVJ3") #95a8195c40d31e0c3b6baa68813fcecb1239f2e9
     
     
 # https://telegram.dog/premiumbotz
@@ -154,7 +154,7 @@ ENABLE_SHORTLINK = bool(environ.get("ENABLE_SHORTLINK", True))
 
 # ---------------------» ᴀᴜᴛᴏ-ᴅᴇʟᴇᴛᴇ «--------------------- #
 
-SELF_DELETE_SECONDS = int(environ.get("SELF_DELETE_SECONDS", 60))
+SELF_DELETE_SECONDS = int(environ.get("SELF_DELETE_SECONDS", 1060))
 SELF_DELETE = environ.get("SELF_DELETE", True)
 if SELF_DELETE == "True":
     SELF_DELETE = True
